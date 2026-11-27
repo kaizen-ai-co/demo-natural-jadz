@@ -20,7 +20,8 @@
     "contrast": "node scripts/contrast.mjs",
     "og": "node scripts/og-image.mjs",
     "licencias": "node scripts/licencias.mjs",
-    "check": "npm run typecheck && npm run lint && npm run contrast && npm run licencias && npm run build && npm run links"
+    "check": "npm run typecheck && npm run lint && npm run contrast && npm run licencias && npm run build && npm run links",
+    "artifact": "node scripts/artifact.mjs dist .artifact"
   },
   "dependencies": {
     "@astrojs/react": "7.1.9",

@@ -4,7 +4,7 @@
   "cliente": "Natural Jadz",
   "heading": "Su agencia, trabajando hoy",
   "intro": "Los agentes preparan. Usted decide. Así se vería una semana de Natural Jadz con el ecosistema de Kaizen.",
-  "fictionalNotice": "Demo con datos ficticios: las cifras, los clientes y los chats son de ejemplo. Nada se publica ni se envía.",
+  "fictionalNotice": "Demo de Kaizen para Natural Jadz con datos ficticios: las cifras, los clientes y los chats son de ejemplo. Nada se publica ni se envía.",
   "periodo": "Semana del 23 al 29 de noviembre (ejemplo)",
   "statusLabels": {
     "disponible": "Disponible",
@@ -13,11 +13,31 @@
   },
   "navLabel": "Secciones de la demo",
   "nav": [
-    { "id": "tablero", "label": "Tablero", "status": "prototipo" },
-    { "id": "aprobar", "label": "Por aprobar", "status": "prototipo" },
-    { "id": "campanas", "label": "Campañas", "status": "prototipo" },
-    { "id": "pedido", "label": "Del chat al pedido", "status": "prototipo" },
-    { "id": "historial", "label": "Historial", "status": "prototipo" }
+    {
+      "id": "tablero",
+      "label": "Tablero",
+      "status": "prototipo"
+    },
+    {
+      "id": "aprobar",
+      "label": "Por aprobar",
+      "status": "prototipo"
+    },
+    {
+      "id": "campanas",
+      "label": "Campañas",
+      "status": "prototipo"
+    },
+    {
+      "id": "pedido",
+      "label": "Del chat al pedido",
+      "status": "prototipo"
+    },
+    {
+      "id": "historial",
+      "label": "Historial",
+      "status": "prototipo"
+    }
   ],
   "funcionesTitulo": "Qué incluye esta demo",
   "funciones": [
@@ -91,9 +111,18 @@
     "notaVoz": "Nota de voz",
     "paraPersona": "Pasa a una persona de su equipo",
     "columnas": [
-      { "id": "nuevo", "label": "Nuevo" },
-      { "id": "confirmado", "label": "Confirmado" },
-      { "id": "despacho", "label": "Listo para despachar" }
+      {
+        "id": "nuevo",
+        "label": "Nuevo"
+      },
+      {
+        "id": "confirmado",
+        "label": "Confirmado"
+      },
+      {
+        "id": "despacho",
+        "label": "Listo para despachar"
+      }
     ],
     "vacio": "Sin pedidos en esta etapa.",
     "agentePrefijo": "Agente",
@@ -104,7 +133,12 @@
     "intro": "Queda registrado qué hizo cada agente, cuándo y quién lo aprobó.",
     "todos": "Todos",
     "filtroLabel": "Filtrar por agente",
-    "columnas": { "hora": "Cuándo", "agente": "Agente", "accion": "Qué hizo", "aprobo": "Aprobó" },
+    "columnas": {
+      "hora": "Cuándo",
+      "agente": "Agente",
+      "accion": "Qué hizo",
+      "aprobo": "Aprobó"
+    },
     "ahora": "Hoy · ahora",
     "aproboTexto": "Usted, por WhatsApp",
     "aproboVoz": "Usted, por nota de voz",
