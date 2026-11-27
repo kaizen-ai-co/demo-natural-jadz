@@ -4,7 +4,16 @@ import astro from "eslint-plugin-astro";
 import jsxA11y from "eslint-plugin-jsx-a11y-x";
 
 export default [
-  { ignores: ["dist/", ".artifact/", ".astro/", "node_modules/", "screenshots/", ".playwright-mcp/"] },
+  {
+    ignores: [
+      "dist/",
+      ".artifact/",
+      ".astro/",
+      "node_modules/",
+      "screenshots/",
+      ".playwright-mcp/",
+    ],
+  },
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,
   ...astro.configs["jsx-a11y-recommended"],
