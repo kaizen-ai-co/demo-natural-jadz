@@ -1,0 +1,29 @@
+---
+import type { z } from "astro/zod";
+import type { faqSchema } from "@/content/schemas";
+import Container from "@/components/ui/Container.astro";
+
+type Props = z.infer<typeof faqSchema>;
+const { id, heading, items } = Astro.props;
+---
+
+<section id={id} aria-labelledby={`${id}-titulo`} class="py-16">
+  <Container class="max-w-3xl">
+    <h2 id={`${id}-titulo`} class="text-3xl font-bold">
+      {heading}
+    </h2>
+    <div class="mt-8 divide-y divide-border border-y border-border">
+      {items.map((item) => (
+        <details class="group py-2">
+          <summary class="min-h-tap flex cursor-pointer items-center justify-between gap-4 font-semibold">
+            {item.question}
+            <span aria-hidden="true" class="transition-transform group-open:rotate-45">
+              +
+            </span>
+          </summary>
+          <p class="pb-4 text-muted">{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,278 @@
+{
+  "agentes": [
+    {
+      "id": "analizar",
+      "nombre": "Analizar",
+      "rol": "Mercado y tendencias",
+      "ultimaAccion": "Recomendó impulsar el Kit Reductor: las búsquedas de «antojo nocturno» subieron 23 % esta semana.",
+      "hora": "Hoy · 7:40 a. m."
+    },
+    {
+      "id": "atraer",
+      "nombre": "Atraer",
+      "rol": "Contenido",
+      "ultimaAccion": "Preparó un video corto, un carrusel y una historia para su aprobación.",
+      "hora": "Hoy · 8:15 a. m."
+    },
+    {
+      "id": "pautar",
+      "nombre": "Pautar",
+      "rol": "Campañas",
+      "ultimaAccion": "Propone mover $100.000 de Google a Meta, sin pasar el tope que usted fijó.",
+      "hora": "Hoy · 9:02 a. m."
+    },
+    {
+      "id": "conversar",
+      "nombre": "Conversar",
+      "rol": "Chats en texto y voz",
+      "ultimaAccion": "Atendió 212 chats en la semana; 4 pasaron a una persona de su equipo.",
+      "hora": "Hoy · 9:30 a. m."
+    },
+    {
+      "id": "vender",
+      "nombre": "Vender",
+      "rol": "Pedidos",
+      "ultimaAccion": "Tomó 38 pedidos en el chat; 5 esperan despacho.",
+      "hora": "Hoy · 9:45 a. m."
+    }
+  ],
+  "kpis": [
+    {
+      "etiqueta": "Visitas a la tienda",
+      "valor": "4.820",
+      "cambio": "+12 %",
+      "sube": true
+    },
+    {
+      "etiqueta": "Pedidos",
+      "valor": "38",
+      "cambio": "+9",
+      "sube": true
+    },
+    {
+      "etiqueta": "Ventas",
+      "valor": "$11.396.200",
+      "cambio": "+31 %",
+      "sube": true
+    },
+    {
+      "etiqueta": "Costo de pauta por pedido",
+      "valor": "$15.900",
+      "cambio": "−14 %",
+      "sube": true
+    },
+    {
+      "etiqueta": "Chats atendidos",
+      "valor": "212",
+      "cambio": "Respuesta en 45 s",
+      "sube": true
+    },
+    {
+      "etiqueta": "Piezas publicadas",
+      "valor": "9",
+      "cambio": "Todas aprobadas por usted",
+      "sube": true
+    }
+  ],
+  "piezas": [
+    {
+      "id": "video-antojo",
+      "tipo": "Video corto · 30 s",
+      "titulo": "¿Comes poco y aun así no bajas?",
+      "canal": "Instagram y TikTok",
+      "programada": "Sábado 28 · 9:00 a. m.",
+      "agente": "Atraer",
+      "imagen": {
+        "src": "/marca/kit-reductor.jpg",
+        "alt": "Kit Reductor de Natural Jadz",
+        "width": 500,
+        "height": 500
+      },
+      "guion": [
+        "0–3 s · Gancho: «¿Comes poco y aun así no bajas?»",
+        "3–15 s · El antojo, la inflamación y la constancia pesan más de lo que crees.",
+        "15–25 s · Kit Reductor: sistema natural de 3 pasos, con seguimiento semana a semana.",
+        "25–30 s · Envío GRATIS a toda Colombia y contraentrega."
+      ],
+      "texto": "Tu cuerpo necesita orden, no castigo. Kit Reductor con seguimiento de 30 días. *No reemplaza una alimentación balanceada ni tratamientos médicos."
+    },
+    {
+      "id": "carrusel-ansiedad",
+      "tipo": "Carrusel · 5 imágenes",
+      "titulo": "5 ideas para la ansiedad de la noche",
+      "canal": "Instagram y Facebook",
+      "programada": "Domingo 29 · 7:00 p. m.",
+      "agente": "Atraer",
+      "guion": [
+        "1 · Cena con proteína y fibra.",
+        "2 · Un vaso de agua antes de abrir la nevera.",
+        "3 · Pantallas fuera 30 minutos antes de dormir.",
+        "4 · Una infusión caliente como ritual.",
+        "5 · Guarda el antojo para el día siguiente."
+      ],
+      "texto": "La ansiedad de la noche tiene trucos. Guarda este carrusel y cuéntanos cuál vas a probar."
+    },
+    {
+      "id": "historia-envio",
+      "tipo": "Historia",
+      "titulo": "Envío GRATIS a los 32 departamentos",
+      "canal": "Historias de Instagram y Facebook",
+      "programada": "Lunes 30 · 12:00 m.",
+      "agente": "Atraer",
+      "guion": [
+        "Fondo crema con el logo.",
+        "Texto grande: «Envío GRATIS a toda Colombia».",
+        "Botón: «Escríbenos por WhatsApp»."
+      ],
+      "texto": "Contraentrega o pago en línea. Hecho en Colombia."
+    }
+  ],
+  "campanas": {
+    "topeTotal": 900000,
+    "lista": [
+      {
+        "id": "meta",
+        "plataforma": "Meta (Instagram y Facebook)",
+        "nombre": "Kit Reductor · antojo nocturno",
+        "tope": 600000,
+        "gastado": 412300,
+        "pedidos": 22
+      },
+      {
+        "id": "google",
+        "plataforma": "Google (búsqueda)",
+        "nombre": "Búsqueda · kit reductor natural",
+        "tope": 300000,
+        "gastado": 191900,
+        "pedidos": 6
+      }
+    ],
+    "propuesta": {
+      "texto": "Mover $100.000 del tope de Google a Meta. En Meta cada pedido está costando bastante menos, y el tope total de la semana sigue igual.",
+      "desde": "google",
+      "hacia": "meta",
+      "monto": 100000
+    }
+  },
+  "conversacion": [
+    {
+      "de": "clienta",
+      "texto": "Hola, ¿el kit reductor sí sirve? Como poco y no bajo."
+    },
+    {
+      "de": "agente",
+      "agente": "Conversar",
+      "voz": true,
+      "texto": "¡Hola, Marcela! El Kit Reductor es un sistema natural de 3 pasos que apoya el control del antojo, la depuración y la desinflamación. No reemplaza una alimentación balanceada ni tratamientos médicos, y trae seguimiento semana a semana durante 30 días."
+    },
+    {
+      "de": "clienta",
+      "texto": "¿Cuánto vale y cómo pago?"
+    },
+    {
+      "de": "agente",
+      "agente": "Vender",
+      "texto": "Vale $299.900 con envío GRATIS a toda Colombia. Puede pagar contraentrega con un anticipo de $50.000, o en línea con tarjeta, PSE o Nequi.",
+      "etapa": "nuevo"
+    },
+    {
+      "de": "clienta",
+      "texto": "Contraentrega. Estoy en Medellín."
+    },
+    {
+      "de": "agente",
+      "agente": "Vender",
+      "texto": "Listo. Le confirmo: 1 Kit Reductor, Medellín, contraentrega. ¿Me regala la dirección y el celular para el envío?"
+    },
+    {
+      "de": "clienta",
+      "texto": "Calle 00 # 00-00. Celular 3000000001."
+    },
+    {
+      "de": "agente",
+      "agente": "Vender",
+      "texto": "Pedido NJ-1048 confirmado. Le escribimos cuando salga, con el número de guía.",
+      "etapa": "confirmado"
+    },
+    {
+      "de": "sistema",
+      "texto": "El agente de pedidos dejó NJ-1048 listo para despachar y avisó a su equipo.",
+      "etapa": "despacho"
+    }
+  ],
+  "pedidoNuevo": {
+    "id": "NJ-1048",
+    "cliente": "Marcela Prueba (ficticia)",
+    "ciudad": "Medellín",
+    "producto": "Kit Reductor",
+    "valor": "$299.900",
+    "pago": "Contraentrega"
+  },
+  "pedidos": [
+    {
+      "id": "NJ-1045",
+      "cliente": "Andrés Ejemplo (ficticio)",
+      "ciudad": "Bogotá",
+      "producto": "Kit Reductor",
+      "valor": "$299.900",
+      "pago": "En línea · PSE",
+      "etapa": "confirmado"
+    },
+    {
+      "id": "NJ-1046",
+      "cliente": "Paula Demo (ficticia)",
+      "ciudad": "Cali",
+      "producto": "Kit Reductor",
+      "valor": "$299.900",
+      "pago": "Contraentrega",
+      "etapa": "despacho"
+    },
+    {
+      "id": "NJ-1047",
+      "cliente": "Sofía Prueba (ficticia)",
+      "ciudad": "Barranquilla",
+      "producto": "Kit Reductor",
+      "valor": "$299.900",
+      "pago": "En línea · Nequi",
+      "etapa": "nuevo"
+    }
+  ],
+  "historial": [
+    {
+      "hora": "Lun 23 · 7:30 a. m.",
+      "agente": "Analizar",
+      "accion": "Reporte semanal: el Kit Reductor es el producto con más oportunidad.",
+      "aprobo": "—"
+    },
+    {
+      "hora": "Lun 23 · 10:12 a. m.",
+      "agente": "Atraer",
+      "accion": "Preparó el video «Por qué comes poco y no bajas».",
+      "aprobo": "Usted, por nota de voz"
+    },
+    {
+      "hora": "Lun 23 · 11:00 a. m.",
+      "agente": "Pautar",
+      "accion": "Lanzó «Kit Reductor · antojo nocturno» en Meta con tope de $600.000.",
+      "aprobo": "Usted, por WhatsApp"
+    },
+    {
+      "hora": "Mar 24 · 3:45 p. m.",
+      "agente": "Conversar",
+      "accion": "Una clienta preguntó si puede usar el kit en embarazo: pasó el chat a una persona de su equipo.",
+      "aprobo": "—"
+    },
+    {
+      "hora": "Mié 25 · 9:20 a. m.",
+      "agente": "Pautar",
+      "accion": "Pausó un anuncio con costo por pedido alto y lo reportó.",
+      "aprobo": "Usted, por WhatsApp"
+    },
+    {
+      "hora": "Jue 26 · 6:05 p. m.",
+      "agente": "Vender",
+      "accion": "Tomó 9 pedidos en el chat; 3 con pago contraentrega.",
+      "aprobo": "—"
+    }
+  ]
+}

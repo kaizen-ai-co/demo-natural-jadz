@@ -1,0 +1,40 @@
+---
+/**
+ * Ensambla una página a partir de su JSON. Para una sección nueva:
+ * 1) agrega su esquema a src/content/schemas.ts (sectionSchema),
+ * 2) crea el componente en esta carpeta,
+ * 3) regístralo aquí.
+ */
+import type { Section } from "@/content/schemas";
+import Hero from "./Hero.astro";
+import Features from "./Features.astro";
+import Pricing from "./Pricing.astro";
+import Testimonials from "./Testimonials.astro";
+import Faq from "./Faq.astro";
+import Cta from "./Cta.astro";
+
+interface Props {
+  sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+{sections.map((section, index) => {
+  // El primer bloque lleva el único <h1> de la página
+  const headingLevel = index === 0 ? 1 : 2;
+  switch (section.type) {
+    case "hero":
+      return <Hero {...section} headingLevel={headingLevel} />;
+    case "features":
+      return <Features {...section} />;
+    case "pricing":
+      return <Pricing {...section} />;
+    case "testimonials":
+      return <Testimonials {...section} />;
+    case "faq":
+      return <Faq {...section} />;
+    case "cta":
+      return <Cta {...section} headingLevel={headingLevel} />;
+  }
+})}

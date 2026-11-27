@@ -1,0 +1,31 @@
+---
+import type { z } from "astro/zod";
+import type { testimonialsSchema } from "@/content/schemas";
+import Container from "@/components/ui/Container.astro";
+
+type Props = z.infer<typeof testimonialsSchema>;
+const { id, heading, items } = Astro.props;
+---
+
+<section id={id} aria-labelledby={`${id}-titulo`} class="py-16">
+  <Container>
+    <h2 id={`${id}-titulo`} class="text-3xl font-bold">
+      {heading}
+    </h2>
+    <ul class="mt-10 grid gap-6 md:grid-cols-2">
+      {items.map((item) => (
+        <li>
+          <figure class="h-full rounded-lg border border-border p-6">
+            <blockquote class="text-lg">
+              <p>{item.quote}</p>
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-muted">
+              <span class="font-semibold text-fg">{item.author}</span>
+              {item.role && <span>, {item.role}</span>}
+            </figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  </Container>
+</section>

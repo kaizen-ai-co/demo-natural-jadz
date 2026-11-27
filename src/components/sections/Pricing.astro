@@ -1,0 +1,48 @@
+---
+import type { z } from "astro/zod";
+import type { pricingSchema } from "@/content/schemas";
+import Container from "@/components/ui/Container.astro";
+import Button from "@/components/ui/Button.astro";
+import { cn } from "@/lib/utils";
+
+type Props = z.infer<typeof pricingSchema>;
+const { id, heading, intro, plans, note } = Astro.props;
+---
+
+<section id={id} aria-labelledby={`${id}-titulo`} class="bg-surface py-16">
+  <Container>
+    <h2 id={`${id}-titulo`} class="text-3xl font-bold">
+      {heading}
+    </h2>
+    {intro && <p class="mt-4 max-w-prose text-muted">{intro}</p>}
+    <ul class="mt-10 grid gap-6 md:grid-cols-2">
+      {plans.map((plan) => (
+        <li
+          class={cn(
+            "flex flex-col rounded-lg border bg-bg p-6",
+            plan.highlighted ? "border-2 border-primary" : "border-border",
+          )}
+        >
+          <h3 class="text-xl font-semibold">{plan.name}</h3>
+          <p class="mt-4">
+            <span class="text-3xl font-bold">{plan.price}</span>
+            {plan.period && <span class="ml-2 text-muted">{plan.period}</span>}
+          </p>
+          <ul class="mt-6 flex-1 list-disc space-y-2 pl-5">
+            {plan.features.map((feature) => (
+              <li>{feature}</li>
+            ))}
+          </ul>
+          <Button
+            href={plan.cta.href}
+            variant={plan.highlighted ? "primary" : "secondary"}
+            class="mt-8"
+          >
+            {plan.cta.label}
+          </Button>
+        </li>
+      ))}
+    </ul>
+    {note && <p class="mt-6 text-sm text-muted">{note}</p>}
+  </Container>
+</section>

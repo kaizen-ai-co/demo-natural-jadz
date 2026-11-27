@@ -1,0 +1,27 @@
+{
+  "name": "Natural Jadz · Demo de su agencia",
+  "url": "https://example.com",
+  "lang": "es",
+  "locale": "es_CO",
+  "description": "Demo con datos ficticios: así trabajaría el ecosistema de agentes de Kaizen para Natural Jadz.",
+  "ogImage": {
+    "src": "/og-default.png",
+    "alt": "Natural Jadz · Demo de su agencia, con los colores de la marca",
+    "width": 1200,
+    "height": 630
+  },
+  "logo": {
+    "src": "/marca/natural-jadz-logo.png",
+    "alt": "Natural Jadz",
+    "width": 120,
+    "height": 52
+  },
+  "fontStylesheet": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap",
+  "skipLinkLabel": "Saltar al contenido",
+  "menuLabel": "Menú",
+  "nav": [],
+  "footer": {
+    "text": "Demo preparada por Kaizen para Natural Jadz · Datos ficticios · Sin promesas de curación.",
+    "links": []
+  }
+}

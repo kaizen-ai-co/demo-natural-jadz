@@ -1,0 +1,24 @@
+---
+import { site } from "@/content/site";
+import Container from "@/components/ui/Container.astro";
+---
+
+<footer class="mt-16 border-t border-border bg-surface py-8 text-sm text-muted">
+  <Container class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <p>{site.footer.text}</p>
+    {site.footer.links.length > 0 && (
+      <ul class="flex flex-wrap gap-4">
+        {site.footer.links.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="min-h-tap inline-flex items-center text-fg underline underline-offset-4"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </Container>
+</footer>

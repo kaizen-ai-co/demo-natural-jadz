@@ -1,0 +1,26 @@
+---
+import type { z } from "astro/zod";
+import type { ctaSchema } from "@/content/schemas";
+import Container from "@/components/ui/Container.astro";
+
+type Props = z.infer<typeof ctaSchema> & { headingLevel?: 1 | 2 };
+const { id, heading, text, cta, headingLevel = 2 } = Astro.props;
+const Heading = headingLevel === 1 ? "h1" : "h2";
+---
+
+<section id={id} aria-labelledby={`${id}-titulo`} class="py-16">
+  <Container>
+    <div class="rounded-lg bg-primary px-6 py-12 text-primary-fg sm:px-12">
+      <Heading id={`${id}-titulo`} class="text-3xl font-bold">
+        {heading}
+      </Heading>
+      <p class="mt-4 max-w-prose">{text}</p>
+      <a
+        href={cta.href}
+        class="min-h-tap mt-8 inline-flex items-center rounded-md bg-bg px-5 py-2 font-semibold text-primary no-underline hover:bg-surface"
+      >
+        {cta.label}
+      </a>
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,10 @@
+# Encabezados de seguridad para Cloudflare Pages (también los entiende Netlify).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+
+# Las demos usan datos ficticios: nunca se indexan.
+/demo/*
+  X-Robots-Tag: noindex, nofollow

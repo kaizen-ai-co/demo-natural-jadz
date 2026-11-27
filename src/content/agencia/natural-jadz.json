@@ -1,0 +1,117 @@
+{
+  "title": "Su agencia trabajando · Natural Jadz",
+  "description": "Demo con datos ficticios del ecosistema de agentes de Kaizen para Natural Jadz: contenido, campañas, chats y pedidos.",
+  "cliente": "Natural Jadz",
+  "heading": "Su agencia, trabajando hoy",
+  "intro": "Los agentes preparan. Usted decide. Así se vería una semana de Natural Jadz con el ecosistema de Kaizen.",
+  "fictionalNotice": "Demo con datos ficticios: las cifras, los clientes y los chats son de ejemplo. Nada se publica ni se envía.",
+  "periodo": "Semana del 23 al 29 de noviembre (ejemplo)",
+  "statusLabels": {
+    "disponible": "Disponible",
+    "prototipo": "Prototipo",
+    "pendiente": "Pendiente"
+  },
+  "navLabel": "Secciones de la demo",
+  "nav": [
+    { "id": "tablero", "label": "Tablero", "status": "prototipo" },
+    { "id": "aprobar", "label": "Por aprobar", "status": "prototipo" },
+    { "id": "campanas", "label": "Campañas", "status": "prototipo" },
+    { "id": "pedido", "label": "Del chat al pedido", "status": "prototipo" },
+    { "id": "historial", "label": "Historial", "status": "prototipo" }
+  ],
+  "funcionesTitulo": "Qué incluye esta demo",
+  "funciones": [
+    {
+      "name": "Recorrido navegable en celular y computador",
+      "status": "disponible",
+      "description": "Funciona tal como se ve, en el navegador."
+    },
+    {
+      "name": "Tablero, aprobaciones, campañas e historial",
+      "status": "prototipo",
+      "description": "Simulados con datos ficticios para mostrar cómo trabajaría el sistema."
+    },
+    {
+      "name": "Conexión real con WhatsApp Business, Meta, Google y la tienda",
+      "status": "pendiente",
+      "description": "Se conecta en la implementación, con las cuentas a nombre de Natural Jadz."
+    }
+  ],
+  "tablero": {
+    "titulo": "Resumen de la semana",
+    "intro": "Lo que hicieron los agentes y lo que espera su decisión.",
+    "kpisTitulo": "Resultados de la semana",
+    "vsAnterior": "frente a la semana anterior",
+    "agentesTitulo": "Sus cinco agentes",
+    "pendientesTitulo": "Esperan su aprobación ({n})",
+    "pendientesVacio": "No hay nada pendiente. Todo lo que se publica ya pasó por usted.",
+    "irAprobar": "Revisar y aprobar"
+  },
+  "aprobar": {
+    "titulo": "Contenido por aprobar",
+    "intro": "Nada sale al público sin su aprobación. Apruebe o pida cambios con un mensaje o una nota de voz.",
+    "canalLabel": "Canal:",
+    "programadaLabel": "Saldría:",
+    "aprobar": "Aprobar",
+    "pedirCambios": "Pedir cambios",
+    "cambiosLabel": "¿Qué cambiaría?",
+    "cambiosAyuda": "Escríbalo como lo diría por WhatsApp.",
+    "cambiosError": "Escriba qué quiere cambiar o envíe la nota de voz.",
+    "enviarTexto": "Enviar por WhatsApp",
+    "enviarVoz": "Enviar nota de voz (simulada)",
+    "cancelar": "Cancelar",
+    "aprobada": "Aprobada. Queda programada.",
+    "enCambios": "Cambios enviados. {agente} la ajusta y se la vuelve a mostrar.",
+    "whatsappTitulo": "Así le llega por WhatsApp",
+    "vozTranscripcion": "Nota de voz (0:12): «Me gusta, pero ponga más grande lo del envío gratis y quite el precio.»",
+    "vacio": "Ya revisó todo. Lo nuevo le llegará por WhatsApp."
+  },
+  "campanas": {
+    "titulo": "Campañas activas",
+    "intro": "La pauta la paga usted, con el tope que usted fija. El agente vigila el gasto y propone ajustes.",
+    "topeTotal": "Tope semanal que usted fijó: {valor}",
+    "tope": "Tope",
+    "gastado": "Gastado",
+    "pedidos": "Pedidos",
+    "costoPedido": "Costo por pedido",
+    "propuestaTitulo": "Propuesta del agente de campañas",
+    "aprobarAjuste": "Aprobar ajuste",
+    "rechazarAjuste": "Dejar como está",
+    "ajusteAprobado": "Ajuste aprobado. El tope total no cambia.",
+    "ajusteRechazado": "Se mantiene la distribución actual."
+  },
+  "pedido": {
+    "titulo": "Del WhatsApp al pedido",
+    "intro": "Una clienta pregunta por el Kit Reductor. El agente responde, toma el pedido y lo deja listo para despachar.",
+    "chatTitulo": "WhatsApp de Natural Jadz",
+    "tableroTitulo": "Tablero de pedidos",
+    "siguiente": "Siguiente mensaje",
+    "reproducir": "Ver toda la conversación",
+    "reiniciar": "Empezar de nuevo",
+    "notaVoz": "Nota de voz",
+    "paraPersona": "Pasa a una persona de su equipo",
+    "columnas": [
+      { "id": "nuevo", "label": "Nuevo" },
+      { "id": "confirmado", "label": "Confirmado" },
+      { "id": "despacho", "label": "Listo para despachar" }
+    ],
+    "vacio": "Sin pedidos en esta etapa.",
+    "agentePrefijo": "Agente",
+    "sistema": "Sistema"
+  },
+  "historial": {
+    "titulo": "Historial de cada acción",
+    "intro": "Queda registrado qué hizo cada agente, cuándo y quién lo aprobó.",
+    "todos": "Todos",
+    "filtroLabel": "Filtrar por agente",
+    "columnas": { "hora": "Cuándo", "agente": "Agente", "accion": "Qué hizo", "aprobo": "Aprobó" },
+    "ahora": "Hoy · ahora",
+    "aproboTexto": "Usted, por WhatsApp",
+    "aproboVoz": "Usted, por nota de voz",
+    "accionAprobada": "Programó «{titulo}» después de su aprobación.",
+    "accionCambios": "Recibió cambios para «{titulo}»: {cambio}",
+    "accionAjuste": "Movió {monto} de Google a Meta, sin cambiar el tope total.",
+    "accionPedido": "Tomó el pedido {id} ({ciudad}) en el chat y lo dejó listo para despachar."
+  },
+  "pie": "Sin promesas de curación. Lo que se publica, la pauta y los precios los decide Natural Jadz."
+}

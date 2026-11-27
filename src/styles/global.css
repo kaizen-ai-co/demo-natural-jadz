@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Puente tokens → utilidades de Tailwind. No agregues valores de marca aquí: van en tokens.css */
+@theme inline {
+  --color-bg: var(--k-color-bg);
+  --color-surface: var(--k-color-surface);
+  --color-fg: var(--k-color-fg);
+  --color-muted: var(--k-color-muted);
+  --color-border: var(--k-color-border);
+  --color-primary: var(--k-color-primary);
+  --color-primary-fg: var(--k-color-primary-fg);
+  --color-accent: var(--k-color-accent);
+  --color-accent-fg: var(--k-color-accent-fg);
+  --color-focus: var(--k-color-focus);
+  --color-danger: var(--k-color-danger);
+  --color-success: var(--k-color-success);
+  --color-status-available: var(--k-status-available);
+  --color-status-prototype: var(--k-status-prototype);
+  --color-status-pending: var(--k-status-pending);
+
+  /* Alias con los nombres que usan los componentes de shadcn/ui → mismos tokens Kaizen */
+  --color-background: var(--k-color-bg);
+  --color-foreground: var(--k-color-fg);
+  --color-primary-foreground: var(--k-color-primary-fg);
+  --color-secondary: var(--k-color-surface);
+  --color-secondary-foreground: var(--k-color-fg);
+  --color-accent-foreground: var(--k-color-accent-fg);
+  --color-muted-foreground: var(--k-color-muted);
+  --color-card: var(--k-color-bg);
+  --color-card-foreground: var(--k-color-fg);
+  --color-popover: var(--k-color-bg);
+  --color-popover-foreground: var(--k-color-fg);
+  --color-destructive: var(--k-color-danger);
+  --color-input: var(--k-color-border);
+  --color-ring: var(--k-color-focus);
+
+  --font-sans: var(--k-font-body);
+  --font-display: var(--k-font-display);
+
+  --radius-sm: var(--k-radius-sm);
+  --radius-md: var(--k-radius-md);
+  --radius-lg: var(--k-radius-lg);
+
+  --container-site: var(--k-container);
+  --spacing-tap: var(--k-tap-min);
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-size: var(--k-text-base);
+    line-height: var(--k-leading-body);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  /* Foco siempre visible (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

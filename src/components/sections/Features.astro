@@ -1,0 +1,25 @@
+---
+import type { z } from "astro/zod";
+import type { featuresSchema } from "@/content/schemas";
+import Container from "@/components/ui/Container.astro";
+
+type Props = z.infer<typeof featuresSchema>;
+const { id, heading, intro, items } = Astro.props;
+---
+
+<section id={id} aria-labelledby={`${id}-titulo`} class="py-16">
+  <Container>
+    <h2 id={`${id}-titulo`} class="text-3xl font-bold">
+      {heading}
+    </h2>
+    {intro && <p class="mt-4 max-w-prose text-muted">{intro}</p>}
+    <ul class="mt-10 grid gap-8 md:grid-cols-3">
+      {items.map((item) => (
+        <li>
+          <h3 class="text-xl font-semibold">{item.title}</h3>
+          <p class="mt-2 text-muted">{item.description}</p>
+        </li>
+      ))}
+    </ul>
+  </Container>
+</section>

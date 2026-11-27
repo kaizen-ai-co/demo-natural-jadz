@@ -1,0 +1,20 @@
+# dependencias y builds
+node_modules/
+dist/
+.astro/
+
+# evidencias locales (capturas de Playwright)
+screenshots/
+.playwright-mcp/
+test-results/
+
+# entorno y configuración personal
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# sistema
+.DS_Store
+Thumbs.db
+*.log
